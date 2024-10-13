@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHUZ'S</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">ASHUZ'S PORTFOLIO</div>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <div class="int">
+          I am <span class="intro">ASHUZ'S</span><br />
+          A passionate
+          <div class="int1">
+            <span id="element"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-container">
+          <h2>About me</h2>
+          <p>
+            Hi! My name is Ashutosh Pradhan. I am currently pursuing my
+            graduation from
+            <abbr title="Lakshya Institute of Technology">Lit</abbr>. This is my
+            basic portfolio .Thank's to my friend for helping me to complete
+            this website
+            <strong>SKETU</strong>
+          </p>
+          <div class="skills">
+            <h3>In future i might change this to something better using</h3>
+            <ul>
+              <li>React</li>
+              <li>node.js</li>
+              <li>tailwind</li>
+              <li>Ai Technology</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work">
+        <div class="workcontainer">
+          <h2>My Work</h2>
+
+          <div class="carousel">
+            <div class="slide">
+              <img src="port.webp" alt="Work1" />
+              <p>
+                This is my first project using html , css , js. In near future i
+                will keep improving my website. In this project i have done all
+                the basic of html, cs and some advance js. I have also
+                implemented type.js which animate the worlds which you seen on
+                next to i am passionate.
+              </p>
+            </div>
+            <div class="slide">
+              <img src="opa.webp" alt="work2" class="cop" />
+              <p>
+                This is my second project i have use python as a main language
+                and created python bot.Music bot was my first project upon
+                telegram it has youtube api and telegram bot token to extract
+                music form any specific youtube video and give output to the
+                user as a audio format of that video.
+              </p>
+            </div>
+          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    <section id="contact">
+      <div class="contact-container">
+          <h2>Contact Me</h2>
+          <p>You can reach out to me via:</p>
+          <div class="social-icons">
+              <a href="https://t.me/kingnox99" target="_blank"><img src="tele.webp" alt="Telegram"></a>
+              <a href="https://www.instagram.com/mystic_mingle105/" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+              <a href="https://www.facebook.com/people/Ashutosh-Pradhan/pfbid0eSeYztkFqvDiTSNHiPhyBnwR1GkPJwA5G8mPZ5RrcsvNvnWDHVz6oh5pLmCg6cCEl/?rdid=IGiCN0AbhWxZoW8Y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fs33kYsR4dj854jSo%2F" target="_blank"><img src="facebook.webp" alt="Facebook"></a>
+          </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Ui/Ux designer ", "Game Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
